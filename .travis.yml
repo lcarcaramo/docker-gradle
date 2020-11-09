@@ -5,7 +5,7 @@ env:
   global:
     - TEST_DIR="$PWD/s390x/test/hotspot/jdk11"
     - TEST_SCRIPT="test.sh"
-    - BUILD_DIR="$PWD/s390x/hostspot/jdk11"
+    - BUILD_DIR="$PWD/s390x/hotspot/jdk11"
     - REPO="quay.io/ibmz/gradle"
     - TAG="$REPO:6.7"
 before_script: 
