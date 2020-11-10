@@ -5,4 +5,6 @@ USER gradle
 WORKDIR /home/gradle/project
 COPY . .
 
+RUN chown gradle *
+
 CMD [ "gradle", "build", "-i" ]
