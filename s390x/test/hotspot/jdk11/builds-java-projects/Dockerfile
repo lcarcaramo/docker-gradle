@@ -3,7 +3,7 @@ FROM quay.io/ibmz/gradle:6.7
 WORKDIR /home/gradle/project
 COPY . .
 
-RUN chown gradle *
+RUN chown -R gradle ../*
 
 USER gradle
 
