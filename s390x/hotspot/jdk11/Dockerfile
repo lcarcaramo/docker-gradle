@@ -39,7 +39,9 @@ RUN apt-get update \
         mercurial \
         openssh-client \
         subversion \
-    && rm -rf /var/lib/apt/lists/*
+        ca-certificates-java \
+    && rm -rf /var/lib/apt/lists/* \
+    && update-ca-certificates -f
 
 ENV GRADLE_VERSION 6.7
 ARG GRADLE_DOWNLOAD_SHA256=8ad57759019a9233dc7dc4d1a530cefe109dc122000d57f7e623f8cf4ba9dfc4
