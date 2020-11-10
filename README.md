@@ -27,7 +27,7 @@ CMD [ "gradle", <gradle-task> ]
 ```
 * Build the image.
 
-`docker build --tag <name of gradle project>`
+`docker build . --tag <image name>`
 
 * Run container using the image you just built.
 
