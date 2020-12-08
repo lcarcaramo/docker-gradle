@@ -1,8 +1,10 @@
 # Tags
-> _Built from [`quay.io/ibmz/openjdk:11.0.8`](https://quay.io/repository/ibmz/openjdk?tab=info)_
--	[`6.7`](https://github.com/lcarcaramo/docker-gradle/blob/master/s390x/hotspot/jdk11/Dockerfile) - [![Build Status](https://travis-ci.com/lcarcaramo/docker-gradle.svg?branch=master)](https://travis-ci.com/lcarcaramo/docker-gradle)
+> _Built from [`quay.io/ibm/openjdk:11.0.8`](https://quay.io/repository/ibm/openjdk?tab=info)_
+-	`6.7` - [![Build Status](https://travis-ci.com/lcarcaramo/docker-gradle.svg?branch=master)](https://travis-ci.com/lcarcaramo/docker-gradle)
 
-# What is Gradle?
+### __[Original Source Code](https://github.com/keeganwitt/docker-gradle)__
+
+Gradle
 
 [Gradle](https://gradle.org/) is a build tool with a focus on build automation and support for multi-language development. If you are building, testing, publishing, and deploying software on any platform, Gradle offers a flexible model that can support the entire development lifecycle from compiling and packaging code to publishing web sites. Gradle has been designed to support build automation across multiple languages and platforms including Java, Scala, Android, C/C++, and Groovy, and is closely integrated with development tools and continuous integration servers including Eclipse, IntelliJ, and Jenkins.
 
@@ -14,7 +16,7 @@
 
 * Create a Dockerfile that uses the Gradle base image to build your Gradle project.
 ```
-FROM quay.io/ibmz/gradle:6.7
+FROM quay.io/ibm/gradle:6.7
 
 WORKDIR /home/gradle/project
 COPY . .
